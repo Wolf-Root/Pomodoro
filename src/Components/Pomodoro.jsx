@@ -121,7 +121,7 @@ function Pomodoro({ mode, setMode }) {
                     className="cursor-pointer text-2xl text-white bg-green-600 rounded-xl border-2 border-gray-700 py-1 md:py-2 px-4 duration-300 hover:bg-green-700"
                     onClick={handleStartStop}
                 >
-                    Start
+                    {isRunning? "Stop" : "Start"}
                 </button>
                 <button
                     id="reset"
